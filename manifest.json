@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "ForumX",
+  "version": "0.1.0",
+  "description": "X'i (x.com) eski usul bir forum sitesi gibi gösterir: konu listesi, mesaj kutuları, üye paneli.",
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "css": ["forum.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
